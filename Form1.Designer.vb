@@ -36,6 +36,11 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtFile = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -131,23 +136,73 @@ Partial Class Form1
         '
         Me.txtFile.Location = New System.Drawing.Point(15, 32)
         Me.txtFile.Name = "txtFile"
-        Me.txtFile.Size = New System.Drawing.Size(275, 20)
+        Me.txtFile.Size = New System.Drawing.Size(356, 20)
         Me.txtFile.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(296, 31)
+        Me.Button1.Location = New System.Drawing.Point(377, 32)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 21)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "OPEN"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(377, 71)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 21)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = "PASTE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(377, 110)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 21)
+        Me.Button3.TabIndex = 12
+        Me.Button3.Text = "COPY"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(377, 149)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 21)
+        Me.Button4.TabIndex = 13
+        Me.Button4.Text = "COPY"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(377, 188)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 21)
+        Me.Button5.TabIndex = 14
+        Me.Button5.Text = "COPY"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(377, 227)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 21)
+        Me.Button6.TabIndex = 15
+        Me.Button6.Text = "COPY"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(386, 265)
+        Me.ClientSize = New System.Drawing.Size(468, 265)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtFile)
         Me.Controls.Add(Me.Label6)
@@ -166,7 +221,8 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SHA Hash Generator by KRIPT4"
+        Me.Text = "SHA Hash Generator"
+        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -185,4 +241,9 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents txtFile As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

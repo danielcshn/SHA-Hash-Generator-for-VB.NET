@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("SHA Hash Generator by KRIPT4")>
+<Assembly: AssemblyTitle("SHA Hash Generator")>
 <Assembly: AssemblyDescription("SHA1/256/384/512 Hash Generator")>
-<Assembly: AssemblyCompany("KRIPT4")>
-<Assembly: AssemblyProduct("SHA Hash Generator by KRIPT4")>
-<Assembly: AssemblyCopyright("Copyright © KRIPT4 2017")>
+<Assembly: AssemblyCompany("danielcshn")>
+<Assembly: AssemblyProduct("SHA Hash Generator")>
+<Assembly: AssemblyCopyright("Copyright © danielcshn 2017-2022")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.1")>
-<Assembly: AssemblyFileVersion("1.0.0.1")>
+<Assembly: AssemblyVersion("1.0.0.2")>
+<Assembly: AssemblyFileVersion("1.0.0.2")>

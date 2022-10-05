@@ -5,8 +5,6 @@ Imports Microsoft.VisualBasic.FileIO
 
 Public Class Form1
 
-    '' Text Encryption:
-
     Private Shared Function EncryptSHA1(text As String) As String
         Dim buffer As Byte() = Encoding.UTF8.GetBytes(text)
         Dim CrypToSha1 As New SHA1CryptoServiceProvider()
@@ -34,8 +32,6 @@ Public Class Form1
         Dim hash As Byte() = sha512.ComputeHash(bytes)
         Return GetStringFromHash(hash)
     End Function
-
-    '' File Encryption:
 
     Private Shared Function FileEncryptSHA1(ByVal file_name As String)
         Dim sha1 As SHA1 = SHA1.Create()
@@ -115,5 +111,25 @@ Public Class Form1
                 MessageBox.Show("Cannot read file from disk. Original error: " & Ex.Message)
             End Try
         End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        txtText.Text = My.Computer.Clipboard.GetText()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        My.Computer.Clipboard.SetText(txtSHA1.Text)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        My.Computer.Clipboard.SetText(txtSHA256.Text)
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        My.Computer.Clipboard.SetText(txtSHA384.Text)
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        My.Computer.Clipboard.SetText(txtSHA512.Text)
     End Sub
 End Class
